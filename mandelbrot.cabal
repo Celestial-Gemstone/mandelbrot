@@ -1,0 +1,13 @@
+cabal-version:      2.4
+name:               mandelbrot
+version:            0.1.0.0
+author:             Jade
+maintainer:         Nils.Jadefalke@gmail.com
+extra-source-files: CHANGELOG.md
+
+executable mandelbrot
+    main-is:          Main.hs
+    build-depends:    JuicyPixels, mtl, lifted-base, base, process, bytestring, numbers
+    ghc-options:      -Wall -threaded -eventlog -rtsopts
+    hs-source-dirs:   app
+    default-language: Haskell2010
